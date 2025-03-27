@@ -73,7 +73,9 @@ yarn build
 First, you will need to deploy the *base ubuntu* image pipeline (`aws4el-ci-pipeline-base-image`).
 
 ```bash
-cdk deploy aws4el-ci-pipeline-base-image --require-approval never --progress bar
+cdk deploy aws4el-ci-pipeline-base-image \
+     --require-approval never \
+     --progress bar
 ```
 
 The created pipeline can be found in the AWS console under `Developer Tools > Pipeline - CodePipeline > Pipelines`. 
@@ -158,7 +160,9 @@ Again, the created pipeline can be found in the AWS console under `Developer Too
 To deploy _all_ the example pipelines, you can use the CDK deploy command:
 
 ```bash
-cdk deploy aws4el-ci-pipelines --require-approval never --concurrency 3
+cdk deploy aws4el-ci-pipelines \
+    --require-approval never \
+    --concurrency 3
 ```
 
 > [!NOTE] 
