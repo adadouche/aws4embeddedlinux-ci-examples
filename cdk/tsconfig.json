@@ -18,7 +18,9 @@
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
     "typeRoots": ["./node_modules/@types"],
-    "outDir": "./dist"
+    "preserveSymlinks": true,
+    "outDir": "./dist",
+    "types": ["jest", "node"]
   },
   "include": ["./bin/**/*"],
   "exclude": ["node_modules", "cdk.out", "dist", "test"]
